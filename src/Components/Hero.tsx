@@ -4,7 +4,7 @@ import { SplitText } from "gsap/all";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
-const Hero = () => {
+export const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const isMobile = useMediaQuery({ maxWidth: 767 });
   useGSAP(() => {
@@ -112,5 +112,3 @@ const Hero = () => {
     </>
   );
 };
-
-export default Hero;

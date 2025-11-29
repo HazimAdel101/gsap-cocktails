@@ -2,7 +2,7 @@ import { cocktailLists, mockTailLists } from "../Constants";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-const Cocktails = () => {
+export const Cocktails = () => {
   useGSAP(() => {
     const parallaxTimeline = gsap.timeline({
       scrollTrigger: {
@@ -13,8 +13,9 @@ const Cocktails = () => {
       },
     });
 
-    parallaxTimeline.from("#c-left-leaf", { x: -100, y: 100 })
-    .from("#c-right-leaf", { x: 100, y: 100 });
+    parallaxTimeline
+      .from("#c-left-leaf", { x: -100, y: 100 })
+      .from("#c-right-leaf", { x: 100, y: 100 });
   });
   return (
     <section className="noisy" id="cocktails">
@@ -67,5 +68,3 @@ const Cocktails = () => {
     </section>
   );
 };
-
-export default Cocktails;
