@@ -1,73 +1,110 @@
-# React + TypeScript + Vite
+# JSM GSAP Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animated landing page built with React, TypeScript, and GSAP animations.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Framework
+- **React** (v19.2.0) - UI library
+- **TypeScript** - Type-safe JavaScript
+- **Vite** (v7.2.4) - Build tool and development server
 
-## React Compiler
+### Styling & UI
+- **Tailwind CSS** (v4.1.17) - Utility-first CSS framework
+- **React Responsive** (v10.0.1) - Responsive design utilities
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Animation
+- **GSAP** (v3.13.0) - Professional animation library
+- **@gsap/react** (v2.1.2) - React integration for GSAP
 
-## Expanding the ESLint configuration
+### Development Tools
+- **ESLint** - Code linting
+- **TypeScript ESLint** - TypeScript-specific linting rules
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Node.js** (v18 or higher recommended)
+- **pnpm** (v10.22.0 or higher) - Package manager
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+If you don't have pnpm installed, you can install it globally:
+```bash
+npm install -g pnpm
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd jsm_gsap_landing
 ```
+
+2. Install dependencies:
+```bash
+pnpm install
+```
+
+## 🏃 Running the Project
+
+### Development Mode
+
+Start the development server with hot module replacement (HMR):
+```bash
+pnpm dev
+```
+
+The application will be available at `http://localhost:5173` (or the next available port).
+
+### Build for Production
+
+Create an optimized production build:
+```bash
+pnpm build
+```
+
+The built files will be in the `dist` directory.
+
+### Preview Production Build
+
+Preview the production build locally:
+```bash
+pnpm preview
+```
+
+### Linting
+
+Run ESLint to check for code issues:
+```bash
+pnpm lint
+```
+
+## 📁 Project Structure
+
+```
+jsm_gsap_landing/
+├── public/           # Static assets (images, fonts, videos)
+├── src/
+│   ├── Components/   # React components
+│   ├── Constants/    # Constants and configuration
+│   ├── app.tsx       # Main app component
+│   ├── main.tsx      # Application entry point
+│   └── index.css     # Global styles
+├── index.html        # HTML template
+├── vite.config.ts    # Vite configuration
+└── package.json      # Dependencies and scripts
+```
+
+## 🎨 Features
+
+- Smooth GSAP animations
+- Responsive design
+- Modern UI with Tailwind CSS
+- Type-safe development with TypeScript
+- Fast development experience with Vite
+
+## 📝 Available Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm lint` - Run ESLint
