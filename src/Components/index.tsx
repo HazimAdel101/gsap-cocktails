@@ -3,3 +3,4 @@ export { Hero } from "./Hero";
 export { Cocktails } from "./Cocktails";
 export { About } from "./About";
 export { Art } from "./Art";
+export { Menu } from "./Menu";

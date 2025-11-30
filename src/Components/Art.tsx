@@ -75,7 +75,7 @@ export const Art = () => {
         </ul>
       </div>
       <div className="masked-container">
-        <h2 className="will-fade">
+        <div className="will-fade">
           <h2 className="will-fade">Sip-Worthy Perfection</h2>
           <div id="masked-content">
             <h3 className="">Made with craft, Poured with Passion</h3>
@@ -84,7 +84,7 @@ export const Art = () => {
               made just for you.
             </p>
           </div>
-        </h2>
+        </div>
       </div>
     </section>
   );
