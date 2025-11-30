@@ -24,9 +24,9 @@ export const Navbar = () => {
   });
 
   return (
-    <nav>
-      <div className="">
-        <a href="#home">
+    <nav className="">
+      <div className="px-6">
+        <a className="flex gap-2" href="#home">
           <img src="/images/logo.png" alt="logo" />
           <p>Velvet Pour</p>
         </a>
