@@ -66,7 +66,7 @@ export const Hero = () => {
 
   return (
     <>
-      <section id="hero" className="noisy">
+      <section id="hero" className="noisy px-5">
         <h1 className="title uppercase">mojito</h1>
         <img
           src="/images/hero-left-leaf.png"

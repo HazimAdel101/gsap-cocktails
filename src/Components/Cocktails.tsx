@@ -18,7 +18,7 @@ export const Cocktails = () => {
       .from("#c-right-leaf", { x: 100, y: 100 });
   });
   return (
-    <section className="noisy" id="cocktails">
+    <section className="noisy px-5" id="cocktails">
       <img
         src="/images/cocktail-left-leaf.png"
         alt="left-leaf"

@@ -31,7 +31,7 @@ export const About = () => {
       );
   });
   return (
-    <section id="about">
+    <section id="about" className="px-5">
       <div className="mb-16 md:px-0 px-5">
         <div className="content">
           <div className="md:col-span-8">

@@ -39,7 +39,7 @@ export const Art = () => {
       })
   });
   return (
-    <section id="art">
+    <section id="art" className="px-5">
       <div className="container mx-auto h-full pt-20">
         <h2 className="will-fade">The Art</h2>
       </div>
