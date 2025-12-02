@@ -40,7 +40,7 @@ export const Contact = () => {
       }, '<');
   });
   return (
-    <footer id="contact" className="px-5">
+    <footer id="contact" className="px-5 md:px-[4rem]">
       <img
         src="/images/footer-right-leaf.png"
         alt="right-leaf"

@@ -30,8 +30,9 @@ export const About = () => {
         "-=0.5"
       );
   });
+  
   return (
-    <section id="about" className="px-5">
+    <section id="about" className="px-5 md:px-[4rem]">
       <div className="mb-16 md:px-0 px-5">
         <div className="content">
           <div className="md:col-span-8">

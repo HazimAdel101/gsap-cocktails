@@ -66,7 +66,7 @@ export const Hero = () => {
 
   return (
     <>
-      <section id="hero" className="noisy px-5">
+      <section id="hero" className="noisy">
         <h1 className="title uppercase">mojito</h1>
         <img
           src="/images/hero-left-leaf.png"
@@ -79,7 +79,7 @@ export const Hero = () => {
           className="right-leaf"
         />
         <div className="body">
-          <div className="content">
+          <div className="content px-5 md:px-[4rem]">
             <div className="space-y-5 hidden md:block">
               <p>Cool. Crisp. Classic.</p>
               <p className="subtitle">

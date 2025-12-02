@@ -75,7 +75,7 @@ export const Menu = () => {
   };
 
   return (
-    <section id="menu" aria-labelledby="menu-heading" className="px-5">
+    <section id="menu" aria-labelledby="menu-heading" className="px-5 md:px-[4rem]">
       <h2 id="menu-heading" className="sr-only">
         Cocktail Menu
       </h2>
